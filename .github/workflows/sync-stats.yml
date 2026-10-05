@@ -7,10 +7,10 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'dsa with c++/**'
-      - 'dsa with c/**'
-      - 'scripts/**'
+    paths-ignore:
+      - 'README.md'
+      - 'assets/**'
+      - '.github/**'
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 permissions:
@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
@@ -41,6 +43,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes in stats or cards to commit."
           else
-            git commit -m "🤖 auto(stats): synchronize live CP metrics and solution catalog [skip ci]"
+            git commit -m "🤖 auto(stats): synchronize live CP metrics and platform cards [skip ci]"
+            git pull --rebase origin main || true
             git push
           fi

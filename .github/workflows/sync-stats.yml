@@ -1,0 +1,46 @@
+name: 🔄 Sync Live DSA & CP Stats
+
+on:
+  schedule:
+    # Run automatically every 6 hours
+    - cron: '0 */6 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'dsa with c++/**'
+      - 'dsa with c/**'
+      - 'scripts/**'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 🚀 Fetch Real-Time Coding Stats & Update Dashboard
+        run: |
+          python3 scripts/sync_stats.py
+
+      - name: 💾 Commit & Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/
+          if git diff --staged --quiet; then
+            echo "No changes in stats or cards to commit."
+          else
+            git commit -m "🤖 auto(stats): synchronize live CP metrics and solution catalog [skip ci]"
+            git push
+          fi

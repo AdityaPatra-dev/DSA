@@ -52,11 +52,23 @@
 
 <div align="center">
 
-| 📊 [Live Automated Stats](#-live-automated-metrics) | 🏆 [Live Platform Cards](#-live-platform-cards--templates) | 💻 [Profiles Directory](#-competitive-programming-profiles) |
+| 📖 [Overview](#-repository-overview) | 📊 [Live Automated Stats](#-live-automated-metrics) | 🏆 [Live Platform Cards](#-live-platform-cards--templates) |
 | :---: | :---: | :---: |
-| 🗂️ [Folder Structure](#️-repository-architecture) | 🤖 [How Auto-Sync Works](#-how-automation-works) | 📬 [Connect &amp; Socials](#-connect--socials) |
+| 💻 [Profiles Directory](#-competitive-programming-profiles) | 🗂️ [Folder Structure](#️-repository-architecture) | 🤖 [How Auto-Sync Works](#-how-automation-works) |
 
 </div>
+
+---
+
+## 📖 Repository Overview
+
+> **Welcome to Aditya Patra's Competitive Programming & DSA Vault!**  
+> This repository serves as a centralized, battle-tested archive of algorithmic solutions implemented in **Modern C++ (C++20)** and **C (C11)**. Every solution is written with clean time & space complexity, modular architectures, and idiomatic low-level techniques.
+>
+> 🚀 **Core Highlights:**
+> - ⚡ **Bilingual Tracks**: Dedicated workspaces for STL-powered C++ ([`dsa with c++`](./dsa%20with%20c%2B%2B)) and manual memory/pointer mastery in C ([`dsa with c`](./dsa%20with%20c)).
+> - 🤖 **Fully Automated CI/CD Sync**: Scheduled GitHub Actions workflows trigger every 6 hours and on code pushes to fetch live metrics via platform APIs.
+> - 🔥 **Real Submission Heatmaps**: Auto-rendered 500×320 SVG cards with verified green-dot heatmaps, global rankings, and daily streaks across **LeetCode**, **Codeforces**, **CodeChef**, **HackerRank**, and **HackerEarth**.
 
 ---
 

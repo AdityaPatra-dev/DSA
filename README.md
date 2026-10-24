@@ -81,7 +81,7 @@
 <div align="center">
 
 ### ⚡ Automated Real-Time Competitive Programming Summary
-*Last auto-synchronized on: `2026-10-24 15:27:07 UTC` via GitHub Actions*
+*Last auto-synchronized on: `2026-10-24 16:27:46 UTC` via GitHub Actions*
 
 | Platform | Handle | Questions Solved | Current Rating / Rank | Streak / Activity | Quick Status |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -214,7 +214,7 @@ flowchart LR
 2. The Python engine ([`scripts/sync_stats.py`](./scripts/sync_stats.py)) queries the GraphQL/REST endpoints of all 5 platforms.
 3. Authentic **500x320** SVG cards with real submission heatmaps, streaks, and official logos are rendered into `assets/`.
 4. Live cross-platform metrics are synchronized into `README.md`.
-5. Changes are committed and pushed automatically by `github-actions[bot]`.
+5. Changes are committed and pushed automatically by Aditya Patra via Personal Access Token (PAT).
 
 ---
 

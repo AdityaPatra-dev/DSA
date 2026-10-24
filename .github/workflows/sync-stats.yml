@@ -24,6 +24,7 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PAT || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: 🐍 Set up Python
@@ -36,14 +37,23 @@ jobs:
           python3 scripts/sync_stats.py
 
       - name: 💾 Commit & Push Changes
+        env:
+          PAT_TOKEN: ${{ secrets.PAT || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          GIT_NAME: ${{ vars.GIT_NAME || 'AdityaPatra-dev' }}
+          GIT_EMAIL: ${{ vars.GIT_EMAIL || 'adityapatraraj@gmail.com' }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "$GIT_NAME"
+          git config --global user.email "$GIT_EMAIL"
+          export GIT_AUTHOR_NAME="$GIT_NAME"
+          export GIT_AUTHOR_EMAIL="$GIT_EMAIL"
+          export GIT_COMMITTER_NAME="$GIT_NAME"
+          export GIT_COMMITTER_EMAIL="$GIT_EMAIL"
+
           git add README.md assets/
           if git diff --staged --quiet; then
             echo "No changes in stats or cards to commit."
           else
-            git commit -m "🤖 auto(stats): synchronize live CP metrics and platform cards [skip ci]"
+            git commit -m "📊 auto(stats): synchronize live CP metrics and platform cards [skip ci]"
             git pull --rebase origin main || true
-            git push
+            git push origin main || git push https://x-access-token:${PAT_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
           fi

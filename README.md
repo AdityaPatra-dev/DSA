@@ -81,11 +81,11 @@
 <div align="center">
 
 ### ⚡ Automated Real-Time Competitive Programming Summary
-*Last auto-synchronized on: `2026-10-27 17:32:14 UTC` via GitHub Actions*
+*Last auto-synchronized on: `2026-10-27 21:51:23 UTC` via GitHub Actions*
 
 | Platform | Handle | Questions Solved | Current Rating / Rank | Streak / Activity | Quick Status |
 | :--- | :--- | :---: | :---: | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" width="18" height="18" /> **LeetCode** | [`Aditya_patra9438`](https://leetcode.com/u/Aditya_patra9438/) | **0** <br/><sub>(🟢 0 Easy \| 🟡 0 Med \| 🔴 0 Hard)</sub> | Global Rank: **N/A** | 🔥 **0 Days** Streak<br/><sub>(0 Active Days)</sub> | ![Active](https://img.shields.io/badge/Status-Solving%20Daily-brightgreen?style=flat-square) |
+| <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" width="18" height="18" /> **LeetCode** | [`Aditya_patra9438`](https://leetcode.com/u/Aditya_patra9438/) | **10** <br/><sub>(🟢 8 Easy \| 🟡 2 Med \| 🔴 0 Hard)</sub> | Global Rank: **#5,000,001** | 🔥 **1 Day** Streak<br/><sub>(6 Active Days)</sub> | ![Active](https://img.shields.io/badge/Status-Solving%20Daily-brightgreen?style=flat-square) |
 | <img src="https://cdn.iconscout.com/icon/free/png-256/free-code-forces-3628695-3029920.png" width="18" height="18" /> **Codeforces** | [`adityapatradev`](https://codeforces.com/profile/adityapatradev) | **0** Solved | **Unrated** (`Unranked`) | Contest Ready | ![Ready](https://img.shields.io/badge/Status-Contestant-blue?style=flat-square) |
 | <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/codechef.svg" width="18" height="18" /> **CodeChef** | [`adityapatradev`](https://www.codechef.com/users/adityapatradev) | **0** Solved | Rating: **Unrated** (0★) | Division Contender | ![Ready](https://img.shields.io/badge/Status-Star%20Rated-orange?style=flat-square) |
 | <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/hackerrank.svg" width="18" height="18" /> **HackerRank** | [`adityapatradev`](https://hackerrank.com/profile/adityapatradev) | Problem Solving | Problem Solver | Verified Profile | ![Active](https://img.shields.io/badge/Status-Verified-00EA64?style=flat-square) |
@@ -100,8 +100,8 @@
     <td align="center"><b>🏆 Target Goal</b></td>
   </tr>
   <tr>
-    <td align="center"><h3><code>0+ Problems</code></h3></td>
-    <td align="center"><h3><code>0 Days Continuous</code></h3></td>
+    <td align="center"><h3><code>10+ Problems</code></h3></td>
+    <td align="center"><h3><code>1 Day Continuous</code></h3></td>
     <td align="center"><h3><code>500+ Questions in C &amp; C++</code></h3></td>
   </tr>
 </table>
